@@ -1,2 +1,3 @@
 # mattieandjack
-Wedding website pre-loader
+
+Wedding website pre-loader to better handle long load times
