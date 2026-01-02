@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mattieandjack/static/css/main.057113f1.css",
+    "main.js": "/mattieandjack/static/js/main.e36a2929.js",
+    "index.html": "/mattieandjack/index.html",
+    "main.057113f1.css.map": "/mattieandjack/static/css/main.057113f1.css.map",
+    "main.e36a2929.js.map": "/mattieandjack/static/js/main.e36a2929.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.057113f1.css",
+    "static/js/main.e36a2929.js"
+  ]
+}
