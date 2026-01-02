@@ -7,4 +7,4 @@ const FaqPage = () => {
 
 export default FaqPage;
 
-export const Head = () => <title>Mattie & Jack</title>;
+export const Head = () => <title>Mattie Neeble and Jack Arnold's Wedding Website</title>;

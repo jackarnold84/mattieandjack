@@ -7,4 +7,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage;
 
-export const Head = () => <title>Mattie & Jack</title>;
+export const Head = () => <title>Mattie Neeble and Jack Arnold's Wedding Website</title>;
