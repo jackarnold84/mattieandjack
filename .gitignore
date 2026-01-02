@@ -1,0 +1,14 @@
+.dev/
+.mock-db/
+__pycache__/
+credentials.*
+node_modules/
+.cache/
+public
+package-lock.json
+.aws-sam/
+samconfig.toml
+settings.json
+.vscode/
+.pytest_cache/
+.DS_Store

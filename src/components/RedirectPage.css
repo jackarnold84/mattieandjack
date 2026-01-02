@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Mrs Eaves Roman Small Caps';
+  font-weight: 400;
+  font-variant: small-caps;
+  src: url('https://d1tntvpcrzvon2.cloudfront.net/static-assets/fonts/MrsEaves-SmallCaps-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Mrs Eaves Roman All Small Caps';
+  font-weight: 400;
+  font-variant: all-small-caps;
+  src: url('https://d1tntvpcrzvon2.cloudfront.net/static-assets/fonts/MrsEaves-AllSmallCaps-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Mrs Eaves Italic';
+  font-weight: 400;
+  font-style: italic;
+  src: url('https://d1tntvpcrzvon2.cloudfront.net/static-assets/fonts/MrsEaves-Italic-Regular.ttf');
+}
+
+.redirect-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.redirect-page h1 {
+  margin-bottom: 20px;
+  font-family: "Mrs Eaves Roman All Small Caps";
+  color: rgb(94, 120, 152);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-left-color: rgb(94, 120, 152);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fallback-button {
+  margin-top: 20px;
+}
+
+.fallback-button a {
+  display: inline-block;
+  padding: 6px 30px;
+  background-color: transparent;
+  color: rgb(94, 120, 152);
+  text-decoration: none;
+  font-family: "Mrs Eaves Roman Small Caps";
+  letter-spacing: 2px;
+  border: 2px solid rgb(94, 120, 152);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.fallback-button a:hover {
+  background-color: rgb(94, 120, 152);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .redirect-page h1 {
+    font-size: 2rem;
+  }
+}
