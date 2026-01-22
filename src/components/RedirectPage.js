@@ -7,6 +7,17 @@ const RedirectPage = ({ subPath = '' }) => {
   const redirectUrl = `${baseUrl}${subPath}`;
 
   React.useEffect(() => {
+    // Log visitor
+    fetch('https://8z9mnh0kob.execute-api.us-east-2.amazonaws.com/Prod/visitors', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        app: 'mattieandjack',
+      })
+    }).catch(error => console.error('Error logging visit:', error));
+
     // Redirect after 1 second
     const redirectTimer = setTimeout(() => {
       window.location.replace(redirectUrl);
